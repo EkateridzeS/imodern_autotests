@@ -1,0 +1,11 @@
+{
+  "auth": [
+    {"id":"TK-A-01", "title":"Успешный вход по email", "email":"valid", "password":"valid", "expected":"success1"},
+    {"id":"TK-A-02", "title":"Неверный пароль", "email":"valid", "password":"wrong", "expected":"credentials"},
+    {"id":"TK-A-03", "title":"Пустой email", "email":"empty", "password":"valid", "expected":"email_required"},
+    {"id":"TK-A-04", "title":"Пустой пароль", "email":"valid", "password":"empty", "expected":"password_required"},
+    {"id":"TK-A-05", "title":"Некорректный формат email", "email":"malformed", "password":"valid", "expected":"invalid_format"},
+    {"id":"TK-A-06", "title":"Незарегистрированный email", "email":"unknown", "password":"valid", "expected":"credentials"}
+  ],
+  "product": {"query":"Maisy", "name":"Стул Maisy, бежевый/дерево", "code":"129021", "path":"/product/stul-maisy-bezhevyy-derevo/", "quantity":1, "observed_price":11880, "comment":"Учебное тестирование"}
+}
